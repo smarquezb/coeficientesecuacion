@@ -1,7 +1,10 @@
 ﻿public class ecuacion
 {
     static void Main(string[]args)
+
     {
+      
+
         // ingresar datos
         Console.Write("Ingrese el coeficiente a: ");
         double a = Convert.ToDouble(Console.ReadLine());
@@ -22,4 +25,12 @@
                 Console.WriteLine("La ecuación no tiene solución");
             }
         }
-        
+        else
+        {
+            double solucion = -b / a;
+
+            Console.WriteLine("La solución es x = " + solucion);
+        }
+    }
+}
+
